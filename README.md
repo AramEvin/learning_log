@@ -2,10 +2,23 @@
 
 My first web-site.
 
-# How to run LEARNING_LOG
+# Install requirements. 
+pip install -r requirement.txt
+# Activate env for Linux
+source env/bin/activate
+# Activate env for Windows
+source env/Scripts/activate
 
-1 Activating the virtual environment >>> source ll_env/bin/activate
+# Create db in this project
+python manage.py makemigrations
 
-2 How to run project >>> python manage.py runserver
+python manage.py migrate 
 
-3 How to open project >>> click in link + ctrl
+
+# Create admin panel 
+python manage.py createsuperuser
+
+# Run this project
+python manage.py runserver
+
+
